@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cashly</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Cashly</h1>
+    <p>¿Qué quieres hacer hoy?</p>
+  </header>
+
+  <main class="grid">
+    <button onclick="openSection('ingresos')" class="green">💰 Ingresos</button>
+    <button onclick="openSection('gastos')" class="orange">💸 Gastos</button>
+    <button onclick="openSection('deudas')" class="red">💳 Deudas</button>
+    <button onclick="openSection('objetivos')" class="blue">🎯 Objetivos</button>
+    <button onclick="openSection('reporte')" class="purple">📊 Reporte</button>
+  </main>
+
+  <section id="modal" class="hidden">
+    <h2 id="modalTitle"></h2>
+    <input type="number" id="amount" placeholder="Monto">
+    <button onclick="saveData()">Guardar</button>
+    <button onclick="closeModal()">Cerrar</button>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>
