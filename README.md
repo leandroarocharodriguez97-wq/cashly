@@ -1,2 +1,0 @@
-# cashly
-Cashly MVP
